@@ -13,5 +13,7 @@ Email: russack@usc.edu
   - Find the sum of a row or colum
   - Copy a row or colum to another row or colum
   
-
+# How To Compile and Run
+- With docker compile using Make
+- Run using ./spmat-test
  
