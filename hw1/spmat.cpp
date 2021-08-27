@@ -441,8 +441,8 @@ else{
 //if row is empty
 if(lists_[1][coord[1]] == nullptr){
     lists_[1][coord[1]] = new_item;
-    new_item-> next[1] == nullptr;
-    new_item -> prev[1] == nullptr;
+    new_item-> next[1] = nullptr;
+    new_item -> prev[1] = nullptr;
 }
 //if row is not empty
 else{
