@@ -1,10 +1,6 @@
-##Linked List Matrix
+## Linked List Matrix
 - Name: Nicole
 - Email: russack@usc.edu
-
-## Notes
-
-  
   
 # How To Compile and Run
 - With docker compile using Make
