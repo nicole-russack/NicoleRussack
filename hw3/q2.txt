@@ -1,0 +1,30 @@
+- explore L
+  - discover H (g=1, h=4, f=5)
+  - discover P (g=1, h=6, f=7)
+- explore H
+  - discover G (g=2, h=3, f=5)
+  - discover D (g=2, h=3, f=5)
+- explore D
+  - discover C (g=3, h=2, f=5)
+- explore C
+  - discover G (g=4, h=3, f=7)
+- explore G
+   - discover K (g=5, h=4, f=9)
+- explore K
+   - discover J (g=6, h=3, f=9)
+- explore J
+   - discover N (g=7, h=4, f=11)
+   - discover I (g=7, h=2, f=9)
+- explore I 
+   - discover E (g=8, h=1, f=9)
+- explore E
+   - discover F (g=9, h=2, f=11)
+   - discover A (g=9, h=0, f=9)
+Found A
+
+
+
+
+
+
+
