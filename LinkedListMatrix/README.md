@@ -3,7 +3,7 @@
 - Email: russack@usc.edu
   
 # How To Compile and Run
-- With docker compile using Make
+- With docker compile using make
 - Run using ./spmat-test
 - This is the code for a 2d array (like a spreadsheet) made from double linked lists in C++
   - Functions are included are
