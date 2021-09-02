@@ -4,7 +4,7 @@
 
 
 ## Compile and Run
-- With docker compile with Make sudoku
+- With docker compile with make sudoku
 - Run with ./sudoku
 - Using recursion and backtracking the program will find and output the solution to a given soduku problem
 - If there is no solution the program will say no solution
