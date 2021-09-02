@@ -316,7 +316,7 @@ int main(int argc, char* argv[])
         ofile << "No solution hasdfojaosd dafs" << endl;
     }
   
-    cout << "values are in output file"
+    cout << "values are in output file";
 
     ofile.close();
     return 0;
