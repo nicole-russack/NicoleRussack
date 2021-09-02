@@ -4,7 +4,7 @@ CXXFLAGS=-g -Wall -std=c++11
 #DEFS=-DDEBUG
 
 
-all: ht-test ht-perf str-hash-test pairless 
+all: ht-test ht-perf str-hash-test
 
 ht-test: ht-test.cpp ht.h
 	$(CXX) $(CXXFLAGS) $(DEFS) $< -o $@
@@ -16,11 +16,9 @@ ht-perf: ht-perf.cpp ht.h
 str-hash-test: str-hash-test.cpp hash.h
 	$(CXX) $(CXXFLAGS) $(DEFS) $< -o $@
 
-# Add a target for pairless
-pairless: pairless.cpp ht.h
-	$(CXX) $(CXXFLAGS) $(DEFS) $< -o $@
+
 
 
 
 clean:
-	rm -f *~ *.o *.sol *.out ht-test ht-perf str-hash-test pairless 
+	rm -f *~ *.o *.sol *.out ht-test ht-perf str-hash-test 
