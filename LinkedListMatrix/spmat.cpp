@@ -706,6 +706,7 @@ else if ((srcCoord[ROW] < srcCoord[COL] && dstCoord[ROW] > dstCoord[COL])){
     // deletes all of the values in the colum
     
     double keepval = 0;
+    int keepy;
    
     if(lists_[COL][dstCoord[COL]]!= nullptr){
         SparseItem* item = lists_[COL][dstCoord[COL]];
