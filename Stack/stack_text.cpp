@@ -7,9 +7,9 @@ using namespace std;
 
 int main(){
 
-    cout << "texttttt" << endl;
+   
     Stack<int> myStack;
-    cout << "here";
+   
     cout << myStack.empty() << endl;
     myStack.push(7);
     myStack.push(8);
