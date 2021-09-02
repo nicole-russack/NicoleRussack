@@ -222,7 +222,6 @@ bool satSolveHelper(size_t v, size_t numV, VarValueMap& varValues, ClauseList& c
 
     //if it was false make it true
     if(varValues.find(v)->second == ZERO){
-        cout << "Made something one???" << endl;
         varValues.find(v)->second = ONE;
         if(evalAll(varValues, clauses, v) == 1){
             return true;
@@ -245,7 +244,6 @@ bool satSolveHelper(size_t v, size_t numV, VarValueMap& varValues, ClauseList& c
     //var was 0 and 1 and did not work
     //must go back 
     //reset to UNDEC
-    cout <<"should nenver be here" << endl;
     return false;
 }
 
@@ -254,7 +252,6 @@ bool satSolveHelper(size_t v, size_t numV, VarValueMap& varValues, ClauseList& c
 TruthVal evalAll(VarValueMap& varValues, ClauseList& clauses, size_t v){
     int size = clauses.size();
     for(int i =0; i < size; i++){
-        //cout << "Loop " << i << endl;
         if(evalClause(varValues, clauses[i]) == ZERO){
             return ZERO;
         }
@@ -262,7 +259,6 @@ TruthVal evalAll(VarValueMap& varValues, ClauseList& clauses, size_t v){
             return UNDEC;
         }   
     }
-    cout << "is true???" << endl;
     return ONE;
 
 }
@@ -319,6 +315,8 @@ int main(int argc, char* argv[])
     else {
         ofile << "No solution hasdfojaosd dafs" << endl;
     }
+  
+    cout << "values are in output file"
 
     ofile.close();
     return 0;
