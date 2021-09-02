@@ -1,6 +1,6 @@
 ## STAT Project
-Name: Nicole
-Email: russack@usc.edu
+- Name: Nicole
+- Email: russack@usc.edu
 
 ## Compile and Run
 - With docker compile with Make sat_solver
