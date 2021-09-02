@@ -135,7 +135,7 @@ SparseMatrix::SparseMatrix(size_t n) :
         lists_[0] = new SparseItem *[n];
         lists_[1] = new SparseItem *[n];
 
-        for(int i =0; i < n; i++){
+        for(size_t i =0; i < n; i++){
             lists_[0][i] = nullptr;
             lists_[1][i] = nullptr;
         }
@@ -152,7 +152,7 @@ SparseMatrix::SparseMatrix(size_t n) :
 SparseMatrix::~SparseMatrix() 
 {
 
-for(int i = 0; i < n_; i++){
+for(size_t i = 0; i < n_; i++){
 if(lists_[0][i] == nullptr){
     continue;
 }
@@ -706,8 +706,7 @@ else if ((srcCoord[ROW] < srcCoord[COL] && dstCoord[ROW] > dstCoord[COL])){
     // deletes all of the values in the colum
     
     double keepval = 0;
-    int keepx;
-    int keepy;
+   
     if(lists_[COL][dstCoord[COL]]!= nullptr){
         SparseItem* item = lists_[COL][dstCoord[COL]];
         SparseItem* temp; 
